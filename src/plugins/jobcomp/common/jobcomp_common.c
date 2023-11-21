@@ -331,9 +331,15 @@ extern data_t *jobcomp_common_job_record_to_data(job_record_t *job_ptr) {
 		data_set_string(data_key_set(record, "tres_req"),
 				job_ptr->tres_fmt_req_str);
 
+    //
+	if (job_ptr->tres_alloc_str)
+		data_set_string(data_key_set(record, "tres_alloc_str"),
+				job_ptr->tres_alloc_str);
+
 	if (job_ptr->tres_fmt_alloc_str)
-		data_set_string(data_key_set(record, "tres_alloc"),
+		data_set_string(data_key_set(record, "tres_fmt_alloc_str"),
 				job_ptr->tres_fmt_alloc_str);
+    //
 
 	if (job_ptr->account)
 		data_set_string(data_key_set(record, "account"),

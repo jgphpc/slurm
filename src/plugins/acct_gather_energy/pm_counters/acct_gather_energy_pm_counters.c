@@ -99,9 +99,11 @@ static uint64_t _get_latest_stats(int type)
 	switch (type) {
 	case GET_ENERGY:
 		file_name = "/sys/cray/pm_counters/energy";
+		// 3901096325 J 1699458690202650 us
 		break;
 	case GET_POWER:
 		file_name = "/sys/cray/pm_counters/power";
+		// 472 W 1699458690202650 us
 		break;
 	default:
 		error("unknown type %d", type);
