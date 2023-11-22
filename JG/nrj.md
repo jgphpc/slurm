@@ -94,8 +94,10 @@ Should we use Slurm provided by HPE
 <!-- {{{ next steps -->
 # Next steps
 
-- Push code back to SchedMD/HPE (who ? short term solution ?)
-- Deploy and validate on a VCluster (which one)
+- Push code back to SchedMD/HPE: open [thread](https://groups.google.com/g/slurm-users/c/P3QiMfUhews)
+- Short term solution for 2023 ?
+- Deploy and validate on a VCluster (which one ?)
+- Compare slurm data with machine room data and/or SSA ?
 - More energy data ?
 - Else ?
 <!-- }}} -->
